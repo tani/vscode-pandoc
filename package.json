@@ -1,0 +1,36 @@
+{
+	"name": "pandoc",
+	"publisher": "taniguchi",
+	"displayName": "Pandoc",
+	"description": "Preview PFM (Pandoc Fravored Markdown)",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.63.2"
+	},
+	"contributes": {
+		"markdown.markdownItPlugins": true
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run build -- --minify",
+		"build": "esbuild ./src/extension.js --bundle --outfile=./dist/extension.js --external:vscode --format=cjs --platform=node"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/tani/vscode-pandoc"
+	},
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"categories": [
+		"Other"
+	],
+	"main": "./dist/extension.js",
+	"browser": "./dist/extension.js",
+	"dependencies": {
+		"markdown-it-emoji": "^2.0.0",
+		"markdown-it-pfm": "^0.1.7"
+	},
+	"devDependencies": {
+		"esbuild": "^0.14.18"
+	}
+}
