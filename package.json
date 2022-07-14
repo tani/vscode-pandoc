@@ -1,9 +1,10 @@
 {
 	"name": "pandoc",
+	"icon": "brand.png",
 	"publisher": "taniguchi",
-	"displayName": "Pandoc",
-	"description": "Preview PFM (Pandoc Fravored Markdown)",
-	"version": "0.1.0",
+	"displayName": "Pandoc Fravored Markdown",
+	"description": "This is a previewer for Pandoc Fravored Markdown documents",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.63.2"
 	},
