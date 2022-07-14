@@ -1,5 +1,9 @@
 # Pandoc
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tani/vscode-pandoc/master/brand.png">
+</p>
+
 This is a VSCode web extension to preview Pandoc Flavored Markdown.
 This plugin relies on markdown-it-pfm to approximate Pandoc Flavored Markodwn. Thus, you do not need to install pandoc locally. 
 Further, you can preview the result on VSCode for Web
